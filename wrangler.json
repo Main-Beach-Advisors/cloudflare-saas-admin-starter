@@ -1,0 +1,30 @@
+{
+  "name": "cloudflare-saas-admin-starter",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cloudflare-saas-admin-starter",
+      "database_id": "04e841de-5d89-4328-9c3d-b8d0150fd6e1"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "cloudflare-saas-admin-starter-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
